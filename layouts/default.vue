@@ -87,9 +87,25 @@ const navItems = {
 </script>
 
 <style>
+.active-nav::after{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  content: '';
+  width: 100%; 
+  height: 0; 
+  /* border-right: 7px solid transparent;
+  border-left: 7px solid transparent; */
+  border: 2px solid var(--brandColor);
+  transition: all 0.3s ease-in-out;
+}
 .active-nav{
-  color: #01c2cf !important;
+  color: #0b193e !important;
   font-weight: 700 !important;
+  transition: all 0.3s ease-in-out;
 }
 
 @media(max-width:767px){
