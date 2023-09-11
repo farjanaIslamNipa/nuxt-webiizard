@@ -5,11 +5,13 @@
 :root{
     --brandColor: #0b193e;
     --primaryColor: #cfa400; 
+    --secondaryColor: #01c2cf; 
 }
 
 body{
     font-family: 'Lexend Deca', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
+    color: var(--brandColor);
 }
 .goog-logo-link {
     display:none !important;
@@ -17,4 +19,57 @@ body{
     
 .goog-te-gadget{
     color: transparent !important;
+}
+
+h1{
+    @apply text-2xl lg:text-3xl xl:text-5xl font-bold
+}
+
+.brand-fill-button{
+    background-color: var(--brandColor);
+    border: 1px solid var(--brandColor);
+    color: white;
+    text-transform: capitalize;
+    min-height: 50px;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.brand-outline-button{
+    background-color: white;
+    border: 1px solid var(--brandColor);
+    color: var(--brandColor);
+    text-transform: capitalize;
+    min-height: 50px;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+@media(max-width:768px){
+    .brand-outline-button{
+        min-height: 45px;
+        min-width: 160px;
+        font-size: 16px;
+    }
+}
+.custom-container{
+    @apply px-4 md:px-10 lg:px-[60px] xl:px-[100px] 2xl:px-[200px]
+}
+.custom-special-card{
+    @apply bg-white rounded-2xl px-4 py-4 xl:py-6
+}
+.custom-special-card{
+    box-shadow: rgba(11, 25, 62, 0.1) 0px 10px 50px;
+}
+.special-card-img{
+    @apply mx-auto h-12 xl:h-14
+}
+.special-card-title{
+    @apply font-bold text-lg xl:text-xl mt-0 xl:mt-2 text-brand
 }
