@@ -54,7 +54,7 @@ const navItems = {
 //  General options
     bottomBorder: 'border-b-2 border-gray-100',
     bottomShadow: 'shadow-md',
-    logoSrc: '/images/brand-logo-b.png',
+    logoSrc: '/images/brand-logo.png',
     logoAlt: 'Webiizard Logo',
     logoHeight: 'h-6 lg:h-7',
     logoWidth: 'w-auto',
