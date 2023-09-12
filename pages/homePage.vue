@@ -15,6 +15,7 @@
         </div>
       </div>
     </section>
+    <HomeExploreServices />
   </div>
 </template>
 
