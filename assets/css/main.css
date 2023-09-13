@@ -67,6 +67,9 @@ h1{
 .custom-special-card{
     box-shadow: rgba(11, 25, 62, 0.1) 0px 10px 50px;
 }
+.card-shadow-lg{
+    box-shadow: rgba(11, 25, 62, 0.1) 0px 10px 50px;
+}
 .special-card-img{
     @apply mx-auto h-12 xl:h-14
 }
