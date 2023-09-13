@@ -16,41 +16,11 @@
       </div>
     </section>
     <HomeExploreServices />
+    <HomeWhoWeAre />
   </div>
 </template>
 
 <script setup>
- 
-
-// TO ADD CUSTOM CLASS
-// --------------------
-// Add customBtn props and pass the class name as props value
-
-// USABLE PROPS VALUE
-// ----------------------
-//     btnName: ''
-//     btnBg : ''
-//     btnColor: ''
-//     btnBorder: ''
-//     btnHeight: ''
-//     btnWidth: ''
-//     btnFont: ''
-//     btnFw: ''
-//     textTransform: ''
-//     btnPadding: ''
-//     btnHover: ''
-//     btnFocus: ''
-//     customBtn: ''
-
-//     TO ADD ICON
-// -----------------
-//     icon: true,
-//     iconPosition: 'right',
-//     iconSrc: '/images/send.png',
-//     iconHeight: 'h-6',
-//     iconWidth: 'w-6',
-//     customBtnIcon: 'button-icon'
-
 const servicesButtonProps = {
     btnName: 'Services',
     btnBg : 'bg-transparent',

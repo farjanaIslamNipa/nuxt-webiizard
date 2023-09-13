@@ -1,15 +1,15 @@
 <template>
-  <div class="custom-container mt-20">
+  <div class="custom-container mt-14 md:mt-20">
     <h1 class="text-center capitalize mb-4">Explore our offerings</h1>
     <p class="text-center text-lg leading-[25px]">we offer three several kind services for your personal and professional use. <br> Choose your desirable service and step ahead to your goal</p>
-    <div class="grid grid-cols-3 gap-8 mt-14 px-20">
-      <div v-for="service in serviceDetails" :key="service.id" class="bg-white rounded-3xl card-shadow-lg p-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 xl:gap-6 2xl:gap-8 mt-14 px-0 sm:px-20 md:px-0 xl:px-20">
+      <div v-for="service in serviceDetails" :key="service.id" class="bg-white rounded-3xl card-shadow-lg p-2 cursor-pointer service-card">
         <div class="bg-[#F7F9FD] p-5 relative rounded-3xl h-full">
-          <div class="top-block"></div>
+          <div class="top-block text-center font-bold"><p class="opacity-0 highlight text-[#0b193ee5]">{{ service.serviceBtn }}</p></div>
           <div class="text-center mt-10">
             <img :src="service.img" :alt="service.name" class="mx-auto h-24">
             <h3 class="text-[22px] font-bold mt-5">{{ service.name }}</h3>
-            <div v-if="service.features" class="space-y-3 mt-5 pb-8">
+            <div v-if="service.features" class="space-y-2 lg:space-y-3 mt-5 pb-4 lg:pb-8">
               <P v-for="(feature, index) in service.features" :key="index">{{ feature }}</P>
             </div>
           </div>
@@ -37,7 +37,8 @@ const serviceDetails = ref([
       'Free 6 months support',
       'On time delivery',
       'Best service in lowest price'
-    ]
+    ],
+    serviceBtn: 'Book Service'
   },
   {
     id:2,
@@ -46,14 +47,15 @@ const serviceDetails = ref([
     name: 'Web solution for learners',
     description:'Elevate your projects with our coding solution service. We provide expert programming and development expertise to tackle your toughest challenges. From custom software development to bug fixes, we deliver efficient, reliable, and scalable solutions that drive your success.',
     features: [
-      'Completely free',
       'Smart and effective solutions',
       'No need to login or register',
       'solution for different languages',
       'Component based solutions',
-      'Clean & professional code',
+      'Clean & professional codes',
+      'free service/no charge applicable',
       'Easy to use'
-    ]
+    ],
+    serviceBtn: 'Get Solution'
   },
   {
     id:3,
@@ -69,7 +71,8 @@ const serviceDetails = ref([
       'Enhance image quality',
       'Adding reflection',
       'Background removal'
-    ]
+    ],
+    serviceBtn: 'Place Order'
   },
 ])
 </script>
@@ -77,12 +80,20 @@ const serviceDetails = ref([
 <style scoped>
 .top-block{
   position: absolute;
-  height: 25px;
-  width: 300px;
+  min-height: 25px;
+  width: 60%;
   background-color: white;
   border-radius: 0 0 30px 30px;
   top: 0;
   left: 50%;
   translate: -50% 0;
+  transition: all 0.5s ease-out;
+}
+.service-card:hover .top-block{
+  background-color: rgba(1, 194, 207, 0.1);
+}
+.service-card:hover .highlight{
+  opacity: 1 !important;
+  transition: all 0.5s ease-out;
 }
 </style>
