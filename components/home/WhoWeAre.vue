@@ -1,47 +1,35 @@
 <template>
-  <section class="why-choose-bg mt-28">
+  <section class="why-choose-bg mt-20 lg:mt-32">
     <div class="custom-container">
-      <div class="pt-md-5 pt-sm-4 pt-0 pb-xl-5 pb-lg-3 pb-0">
-        <div class="flex justify-end"><img src="/images/home/who-we-are.jpg" alt="Why choose us" class="why-choose-img h-[600px]" /></div>
-        <div class="grid grid-cols-12 justify-content-xl-start justify-center">
-          <div class="xl:col-span-6 lg:col-span-8 md:col-span-10">
-            <div class="why-choose-box bg-white sm:pt-4 pt-0 pb-3 mb-4">
-              <div class="why-choose-title"><h2 class="pl-3 pt-3">Why choose us?</h2></div>
-              <div class="sm:px-5 px-2">
-                <p class="text-lg">Your satisfaction is our goal. If you’re not happy. Please let us know, we will work with you to make it right. </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 mt-4">
-                  <div class="mb-4">
-                    <div class="bg-white light-box-shadow h-full py-4 px-2">
-                      <div class="flex items-center justify-center">
-                        <div><img src="/images/home/background-check-icon.webp" alt="check" /></div>
-                        <p style="color: #000000" class="mb-0 ml-3 font-medium">Background <br>Check</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <div class="bg-white light-box-shadow h-full py-4 px-2">
-                      <div class="flex items-center justify-center">
-                        <div><img class="shield-icon" src="/images/home/support-icon.webp" alt="24/7 Support" /></div>
-                        <p style="color: #000000" class="mb-0 ml-3 font-medium">24/7 <br>Support</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <div class="bg-white light-box-shadow h-full py-4 px-2">
-                      <div class="flex items-center justify-center">
-                        <div><img class="shield-icon" src="/images/home/professional icon.webp" alt="Expert Professional" /></div>
-                        <p style="color: #000000" class="mb-0 ml-3 font-medium">Expert  <br>Professional</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-4">
-                    <div class="bg-white light-box-shadow h-full py-4 px-2">
-                      <div class="flex items-center justify-center">
-                        <div><img class="shield-icon" src="/images/home/assurance-icon.webp" alt="Rework Assurance" /></div>
-                        <p style="color: #000000" class="mb-0 ml-3 font-medium">Rework  <br>Assurance</p>
-                      </div>
-                    </div>
-                  </div>
+      <div class="pt-md-5 pt-sm-4 pt-0 xl:pb-8 lg:pb-3 pb-0">
+        <div class="hidden lg:flex justify-end"><img src="/images/home/choose-2.jpg" alt="Why choose us" class="why-choose-img h-[600px]" /></div>
+        <div class="why-choose-box bg-white py-6 sm:py-14 mb-4 px-5 sm:px-10 rounded-3xl w-full lg:w-[700px] xl:w-[800px]">
+          <div class="why-choose-title ml-3 md:ml-6 mb-4 md:mb-6"><h1 class="pt-3">Why choose us?</h1></div>
+          <div class="sm:px-5 px-2">
+            <p class="text-base md:text-lg">Your satisfaction is our goal. If you’re not happy. Please let us know, we will work with you to make it right. </p>
+            <div class="grid grid-cols-2 gap-0 sm:gap-6 mt-5 md:mt-8">
+              <div class="bg-white light-box-shadow h-full py-5 px-1 md:px-4">
+                <div class="flex items-center">
+                  <div><img src="/images/home/re-search.svg" alt="Resource research" class="h-10 md:h-12" /></div>
+                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Resource <br>Research</p>
+                </div>
+              </div>
+              <div class="bg-white light-box-shadow h-full py-4 px-1 md:px-4">
+                <div class="flex items-center">
+                  <div><img class="h-10 md:h-12" src="/images/home/24-seven.svg" alt="24/7 Support" /></div>
+                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">24/7 <br>Support</p>
+                </div>
+              </div>
+              <div class="bg-white light-box-shadow h-full py-4 px-1 md:px-4">
+                <div class="flex items-center">
+                  <div><img class="h-10 md:h-12" src="/images/home/expert.svg" alt="Expert Professional" /></div>
+                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Expert  <br>Professional</p>
+                </div>
+              </div>
+              <div class="bg-white light-box-shadow h-full py-4 px-1 md:px-4">
+                <div class="flex items-center">
+                  <div><img class="h-10 md:h-12" src="/images/home/re-work.svg" alt="Rework Assurance" /></div>
+                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Rework  <br>Assurance</p>
                 </div>
               </div>
             </div>
@@ -57,16 +45,6 @@
 </script>
 
 <style scoped>
-.shield-icon{
-  height: 63px;
-  width: 50px;
-}
-.why-choose-bg{
-  background-image: url('/images/home/why-choose-bg.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
 .why-choose-title {
     width: 100%;
     position: relative;
@@ -75,49 +53,41 @@
 .why-choose-title:after {
     content: '';
     width: 100px;
-    border-bottom: solid 2px var(--brandColor);
+    border-bottom: solid 3px var(--secondaryColor);
     position: absolute;
     left: 0;
     top: 50%;
     z-index: 1;
 }
 
-.why-choose-title h2 {
+.why-choose-title h1 {
     background-color: white;
     display: inline-block;
     z-index: 3;
     position: relative;
     margin: 0;
     margin-left: 80px;
-    font-size: 50px;
 }
 .why-choose-box{
-  margin-top: -220px;
+  margin-top: -280px;
   position: relative;
 }
-@media(max-width:991px){
-  .why-choose-title h2{
-    font-size: 45px;
-  }
+.light-box-shadow{
+  box-shadow: rgba(78, 78, 78, 0.09) 0 3px 12px 0;
 }
-@media(max-width:767px){
-  .why-choose-title h2{
-    font-size: 40px;
-  }
-  .why-choose-box{
-    margin-top: -80px;
-  }
+@media(max-width:768px){
+  .why-choose-title:after {
+    width: 60px;
+    top: 55%;
 }
-@media(max-width:475px){
-  .why-choose-title h2{
-    font-size: 35px;
-    margin-left: 0;
-  }
-  .why-choose-img{
-    display: none;
-  }
   .why-choose-box{
     margin-top: 0;
+    box-shadow: rgba(11, 25, 62, 0.1) 0px 10px 50px;
+  }
+}
+@media(max-width: 639px){
+  .light-box-shadow{
+    box-shadow: none;
   }
 }
 </style>
