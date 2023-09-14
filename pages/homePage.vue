@@ -17,6 +17,7 @@
     </section>
     <HomeExploreServices />
     <HomeWhoWeAre />
+    <HomeProjects />
   </div>
 </template>
 
