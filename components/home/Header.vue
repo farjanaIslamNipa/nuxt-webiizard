@@ -4,7 +4,7 @@
       <div class="">
         <img src="/images/home/header.jpg" alt="" class="header-img">
       </div>
-      <div class="pl-0 md:pl-4 xl:pl-20 text-brand">
+      <div class="pl-0 md:pl-4 xl:pl-10 2xl:pl-20 text-brand">
         <h1>Elevate your online</h1>
         <h1>presence to new heights</h1>
         <div class="pl-1 my-4 lg:my-6">

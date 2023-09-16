@@ -5,14 +5,14 @@
     <img 
     :src="props.buttonProps?.iconSrc" 
     :class="iconStyle()" 
-    alt="Jatri">
+    alt="Webiizard">
   </div>
   <span>{{ btnStyle?.btnName ? btnStyle?.btnName : 'Button' }}</span>
   <div v-if="props.buttonProps?.icon && props.buttonProps?.iconPosition === 'right'">
     <img 
     :src="props.buttonProps?.iconSrc" 
     :class="iconStyle()" 
-    alt="Jatri">
+    alt="Webiizard">
   </div>
     
   </NuxtLink>

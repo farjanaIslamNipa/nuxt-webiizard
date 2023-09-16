@@ -18,6 +18,7 @@
     <HomeExploreServices />
     <HomeWhoWeAre />
     <HomeProjects />
+    <HomeContactForm />
   </div>
 </template>
 

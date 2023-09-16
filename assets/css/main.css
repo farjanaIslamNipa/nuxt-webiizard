@@ -26,13 +26,15 @@ body{
 h1{
     @apply text-2xl md:text-3xl xl:text-5xl font-bold
 }
-
+textarea {
+    resize: none;
+  }
 .brand-fill-button{
     background-color: var(--brandColor);
     border: 1px solid var(--brandColor);
-    color: white;
+    color: var(--secondaryColor);
     text-transform: capitalize;
-    min-height: 50px;
+    min-height: 46px;
     min-width: 220px;
     display: flex;
     justify-content: center;

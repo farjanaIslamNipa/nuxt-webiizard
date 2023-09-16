@@ -1,14 +1,21 @@
 <template>
   <div class="custom-container mt-10">
     <h1 class="text-center mb-6">A Glimpse into Our Projects</h1>
-    <p class="text-center px-32">Our gallery of stunning websites and web applications that showcase our passion for design, creativity, and technological expertise. Each project is a testament to our commitment to transforming ideas into captivating online experiences. Discover the artistry and innovation behind our web solutions</p>
-    <div class="grid grid-cols-3 gap-14 mt-16">
-      <div v-for="project in projectData" :key="project.id" class="relative min-h-[400px]">
+    <p class="text-center px-0 xl:px-32">Our gallery of stunning websites and web applications that showcase our passion for design, creativity, and technological expertise. Each project is a testament to our commitment to transforming ideas into captivating online experiences. Discover the artistry and innovation behind our web solutions</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-14 mt-16">
+      <div v-for="project in projectData" :key="project.id" class="relative min-h-[400px] project-card cursor-pointer">
         <img :src="project.img" :alt="project.name" class="h-full w-full object-cover" >
-        <div class="project-hover-content bg-appSecondary bg-opacity-50 p-5 absolute bottom-5 w-[90%] mx-auto">
-          <p>{{ project.name }}</p>
+        <div class="project-hover-content bg-appSecondary bg-opacity-80 h-16 absolute bottom-5 w-[90%] left-[50%] translate-x-[-50%]">
+          <div class="flex justify-between h-full items-center">
+            <p class="text-white font-bold text-xl pl-2">{{ project.name }}</p>
+            <div class="bg-white w-10 h-full flex items-center justify-center"><img class="h-8" src="/images/home/right-arrow.svg" alt=""></div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="mt-12 flex justify-between items-center">
+      <div class="border border-t-gray-300 border-b-0 w-full"></div>
+      <AppButton route-path="#" :buttonProps="buttonProps" />
     </div>
   </div>
 </template>
@@ -60,8 +67,30 @@ const projectData =ref([
     link: ''
   }
 ])
+
+const buttonProps = {
+    btnName: 'Explore More',
+    btnBg : 'bg-transparent',
+    btnColor: 'text-brand',
+    btnBorder: 'border border-gray-400 rounded-sm',
+    btnHeight: 'h-9 md:h-12',
+    btnWidth: 'min-w-[170px]',
+    btnFont: 'text-base',
+    btnFw: 'font-semibold',
+    textTransform: 'capitalize',
+    btnPadding: 'p-4',
+    btnHover: 'hover:bg-brand hover:border hover:border-appSecondary hover:text-appSecondary',
+    btnFocus: 'focus:none',
+    btnCustom: 'custom-button',
+}
 </script>
 
 <style scoped>
-
+.project-card:hover .project-hover-content{
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.project-hover-content{
+  opacity: 0;
+}
 </style>
