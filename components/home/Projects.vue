@@ -8,7 +8,7 @@
         <div class="project-hover-content bg-appSecondary bg-opacity-80 h-16 absolute bottom-5 w-[90%] left-[50%] translate-x-[-50%]">
           <div class="flex justify-between h-full items-center">
             <p class="text-white font-bold text-xl pl-2">{{ project.name }}</p>
-            <div class="bg-white w-10 h-full flex items-center justify-center"><img class="h-8" src="/images/home/right-arrow.svg" alt=""></div>
+            <div class="bg-white w-10 h-full flex items-center justify-center"><img class="h-6" src="/images/home/right-arrow.png" alt=""></div>
           </div>
         </div>
       </div>
