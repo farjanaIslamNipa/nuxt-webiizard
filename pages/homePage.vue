@@ -19,6 +19,7 @@
     <HomeWhoWeAre />
     <HomeProjects />
     <HomeContactForm />
+    <HomeBlogs />
   </div>
 </template>
 
