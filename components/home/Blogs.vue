@@ -4,10 +4,10 @@
       <h3 class="text-2xl font-bold">Blog Bytes</h3>
       <AppButton route-path="#" :buttonProps="buttonProps" />
     </div>
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-10">
       <div v-for="blog in blogData" :key="blog.id" class="bg-white blog-card">
-        <div class="bg-white h-60 w-full mb-6"><img :src="blog.img" alt="Webiizard Blog" class="h-full w-full object-cover blog-img"></div>
-        <h4 class="text-xl font-bold min-h-[70px] px-4">{{ blog.title }}</h4>
+        <div class="bg-white h-60 w-full mb-6 overflow-hidden"><img :src="blog.img" alt="Webiizard Blog" class="h-full w-full object-cover blog-img"></div>
+        <h4 class="text-lg font-bold min-h-[70px] px-4">{{ blog.title }}</h4>
         <div class="mt-4 px-4 pb-8">
           <div class="flex items-center w-1/2 mb-1">
             <div class="round"></div> <div class="line w-full"></div>
@@ -95,11 +95,26 @@ const blogData = ref([
 }
 .blog-card{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  transition: all 0.5s ease;
+  /* transition: transform 0.5s ease-in; */
 
 }
+.blog-img{
+  -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    -ms-transition: 0.8s;
+    transition: 0.8s;
+}
 .blog-card:hover .blog-img{
-
-
+  -moz-transform: scale(1.5) rotate(0deg);
+  -webkit-transform: scale(1.5) rotate(0deg);
+  -o-transform: scale(1.5) rotate(0deg);
+  -ms-transform: scale(1.5) rotate(0deg);
+  transform: scale(1.5) rotate(0deg);
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  -ms-transition: 0.8s;
+  transition: 0.8s;
 }
 </style>

@@ -24,18 +24,24 @@ const navItems = {
     },
     {
       id:2,
-      name:'About us',
-      link:'/about-us',
+      name:'Services',
+      link:'/services',
       icon:'',
     },
     {
       id:3,
-      name:'Career',
-      link:'/career',
+      name:'Solutions',
+      link:'/solutions',
       icon:'',
     },
     {
       id:4,
+      name:'Projects',
+      link:'/projects',
+      icon:'',
+    },
+    {
+      id:5,
       name:'Contact us',
       link:'/contact-us',
       icon:'',
