@@ -9,12 +9,12 @@
           <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:gap-12">
             <div class="grid grid-cols-2 gap-3 lg:gap-4 xl:gap-6">
               <div v-for="tech in techData" :key="tech.id" class="flex items-center gap-3 border border-gray-200 rounded-full py-2 px-4 bg-white">
-                <div><img :src="tech.imgRgb" :alt="tech.name" :class="tech.imgHeight"></div>
+                <div><NuxtImg :src="tech.imgRgb" :alt="tech.name" :class="tech.imgHeight" /></div>
                 <div>{{ tech.name }}</div>
               </div>
             </div>
             <div class="hidden md:flex justify-end">
-              <img src="/images/home/tech-1.jpg" alt="Webiizard solutions" class="technology-img">
+              <NuxtImg src="/images/home/tech-1.webp" alt="Webiizard solutions" class="technology-img" />
             </div>
           </div>
         </div>

@@ -79,7 +79,7 @@ const buttonProps = {
     btnFw: 'font-semibold',
     textTransform: 'capitalize',
     btnPadding: 'p-4',
-    btnHover: 'hover:bg-brand hover:border hover:border-appSecondary hover:text-appSecondary',
+    btnHover: 'hover:tracking-wider hover:text-appSecondary',
     btnFocus: 'focus:none',
     btnCustom: 'custom-button',
 }

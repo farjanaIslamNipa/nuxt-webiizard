@@ -2,7 +2,7 @@
   <div class="custom-container">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 lg:gap-10 mt-4 md:mt-10 lg:mt-14">
       <div class="">
-        <img src="/images/home/header.jpg" alt="" class="header-img">
+        <NuxtImg src="/images/home/header.webp" alt="Webiizard" />
       </div>
       <div class="pl-0 md:pl-4 xl:pl-10 2xl:pl-20 text-brand">
         <h1>Elevate your online</h1>
@@ -27,8 +27,8 @@
             <span class="text-base lg:text-lg">And much more</span>
           </p>
         </div>
-        <div>
-          <button class="brand-outline-button">Our Services</button>
+        <div class="inline-block">
+          <AppButton route-path="#" :buttonProps="buttonProps" />
         </div>
       </div>
     </div>
@@ -36,19 +36,33 @@
 </template>
 
 <script setup>
-
+const buttonProps = {
+    btnName: 'Explore Services',
+    btnBg : 'bg-transparent',
+    btnColor: 'text-brand',
+    btnBorder: 'border border-gray-400 rounded-sm',
+    btnHeight: 'h-9 md:h-12',
+    btnWidth: 'min-w-[170px] lg:min-w-[200px]',
+    btnFont: 'text-base',
+    btnFw: 'font-semibold',
+    textTransform: 'capitalize',
+    btnPadding: 'p-4',
+    btnHover: 'hover:tracking-wider hover:text-appSecondary',
+    btnFocus: 'focus:none',
+    btnCustom: 'custom-button',
+}
 </script>
 
 <style scoped>
-.header-img{
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
 @media(max-width:767px){
   .header-img{
     height: 200px;
     width: 100%;
     object-fit: cover;
+    color: #231557 0%;
+    color:#44107a 29%;
+    color: #ff1361 67%;
+    color: #fff800 100%
   }
 }
 </style>

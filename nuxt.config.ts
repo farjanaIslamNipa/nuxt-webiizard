@@ -41,5 +41,11 @@ postcss: {
       autoprefixer: {},
   },
 },
-
+modules: [
+  '@nuxt/image',
+],
+image: {
+  quality: 80,
+  format: ['webp']
+}
 })

@@ -58,7 +58,7 @@ const solutionButtonProps = {
 
 <style scoped>
 .service-solution{
-  background:linear-gradient(0deg, rgb(11, 25, 62, 0.9), rgb(11, 25, 62, 0.8)), url('/images/home/team-1.jpg');
+  background:linear-gradient(0deg, rgb(11, 25, 62, 0.9), rgb(11, 25, 62, 0.8)), url('/images/home/team-1.webp');
   background-size:cover;
   color: rgb(11, 25, 62);
   background-attachment: fixed;

@@ -2,7 +2,7 @@
   <section class="why-choose-bg mt-20 lg:mt-32">
     <div class="custom-container">
       <div class="pt-md-5 pt-sm-4 pt-0 xl:pb-8 lg:pb-3 pb-0">
-        <div class="hidden lg:flex justify-end"><img src="/images/home/choose-2.jpg" alt="Why choose us" class="why-choose-img h-[600px]" /></div>
+        <div class="hidden lg:flex justify-end"><NuxtImg src="/images/home/choose-2.webp" alt="Why choose us" class="why-choose-img h-[600px]" /></div>
         <div class="why-choose-box bg-white py-6 sm:py-14 mb-4 px-5 sm:px-10 rounded-3xl w-full lg:w-[700px] xl:w-[800px]">
           <div class="why-choose-title ml-3 md:ml-6 mb-4 md:mb-6"><h1 class="pt-3">Why choose us?</h1></div>
           <div class="sm:px-5 px-2">

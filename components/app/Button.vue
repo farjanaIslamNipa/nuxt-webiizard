@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="props?.routePath ? props?.routePath : '#'" class="flex items-center justify-center gap-2 transition ease-in-out duration-500" 
+  <NuxtLink :to="props?.routePath ? props?.routePath : '#'" class="flex items-center justify-center gap-2 transition-all ease-in-out duration-500" 
   :class="props.buttonProps ? defaultBtnStyle() : 'bg-[#f04935] text-white border border-[#f04935] rounded-md h-9 md:h-10 min-w-[80px] md:min-w-[120px] text-base md:text-lg font-medium hover:bg-white hover:text-[#f04935] hover:border hover:border-[#f04935] focus:none'">
   <div v-if="props.buttonProps?.icon && props.buttonProps?.iconPosition !== 'right'">
     <img 

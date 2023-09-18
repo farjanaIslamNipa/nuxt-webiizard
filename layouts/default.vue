@@ -113,10 +113,15 @@ const navItems = {
   font-weight: 700 !important;
   transition: all 0.3s ease-in-out;
 }
-
+@media(max-width:1023px){
+  .active-nav::after{
+  border: 0;
+}
+}
 @media(max-width:767px){
 .custom-nav{
   padding-left: 0 !important;
 }
 }
+
 </style>
