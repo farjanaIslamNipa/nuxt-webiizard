@@ -1,7 +1,5 @@
 <template>
-  <div>
-this is about us page
-  </div>
+  <AboutHeader />
 </template>
 
 <script setup>
