@@ -30,7 +30,7 @@ import { useSSRContext } from 'nuxt/dist/app/compat/capi';
 
 <script setup>
 const serviceButtonProps = {
-    btnName: 'Explore Services',
+    btnName: 'Get Services',
     btnBg : 'bg-gray-100',
     btnColor: 'text-brand',
     btnBorder: 'border-0',

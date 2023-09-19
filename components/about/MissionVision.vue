@@ -7,7 +7,7 @@
       </div>
       <div class="py-0 md:py-8 pl-0 md:pl-8">
         <h3 class="our-mission relative text-2xl font-bold z-50"><span class="inline-block pl-5">Our Story</span></h3>
-        <p class="mt-6 ml-5 pb-4">Founded in 2021, Webiizard has evolved from a small startup into a dynamic web design and development agency. Our journey began with a shared vision to make the web a more beautiful and accessible place. Since then, we've grown our team and honed our skills to provide comprehensive digital solutions for clients across diverse industries.</p>
+        <p class="mt-6 ml-5 pb-0 sm:pb-4">Founded in 2021, Webiizard has evolved from a small startup into a dynamic web design and development agency. Our journey began with a shared vision to make the web a more beautiful and accessible place. Since then, we've grown our team and honed our skills to provide comprehensive digital solutions for clients across diverse industries.</p>
       </div>
     </div>
     <div class="border-t border-t-gray-300 pt-10 mt-12">
@@ -31,10 +31,9 @@
   position: absolute;
   content: '';
   top: -6px;
-  /* left: -4px; */
   height: 45px;
   width: 45px;
-  background-color: rgba(1, 194, 207, 0.3);
+  background-color: rgba(207, 164, 0, 0.4);
   border-radius: 50%;
   z-index: -10;
 }

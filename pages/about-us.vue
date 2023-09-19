@@ -1,6 +1,7 @@
 <template>
   <AboutHeader />
   <AboutMissionVision />
+  <AboutServices />
 </template>
 
 <script setup>
