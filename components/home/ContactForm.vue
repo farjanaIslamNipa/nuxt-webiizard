@@ -18,6 +18,10 @@
                 <label for="">Email</label>
                 <input type="text" class="block border w-full mt-1 py-2 px-4 placeholder:text-sm border-gray-400" placeholder="Enter your email address">
               </div>
+              <div class="mb-3">
+                <label for="">Phone</label>
+                <input type="text" class="block border w-full mt-1 py-2 px-4 placeholder:text-sm border-gray-400" placeholder="Enter your phone number">
+              </div>
               <div class="mb-5">
                 <label for="">Message</label>
                 <textarea name="" id="" cols="30" rows="3" class="block border w-full mt-1 py-2 px-4 placeholder:text-sm border-gray-400" placeholder="Enter your email address"></textarea>

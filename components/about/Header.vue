@@ -64,6 +64,7 @@ const solutionButtonProps = {
 <style scoped>
 .about-us-header{
   background:linear-gradient(0deg, rgb(11, 25, 62, 0.3), rgb(11, 25, 62, 0.2)), url('/images/about-us/header.jpg');
+  background-repeat: no-repeat;
   background-size:cover;
   color: rgb(11, 25, 62);
   background-position: center center;
