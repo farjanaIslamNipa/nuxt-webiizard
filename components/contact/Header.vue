@@ -1,3 +1,5 @@
+
+import { NuxtImg } from '#build/components';
 <template>
   <div class="contact-header h-[600px]"></div>
   <div class="custom-container">
@@ -44,6 +46,12 @@
             <label for="">Upload sample File - if needed (Optional)</label>
           </div>
           <div><button class="py-3 text-white bg-brand w-full">Send Message</button></div>
+        </div>
+      </div>
+      <div class="flex justify-end items-end">
+        <div class="h-full w-full">
+          <h3 class="font-bold text-2xl px-10 pt-5 pb-3">Find us on google</h3>
+          <NuxtImg src="/images/contact-us/map.jpg" alt="Webizaard map" class="w-full px-10" />
         </div>
       </div>
     </div>
