@@ -5,8 +5,8 @@
         <h2>smart services & solution</h2>
         <h2>all you need</h2>
         <div class="flex items-center justify-center mt-4 lg:mt-6">
-          <AppButton route-path="/about-us" :buttonProps="servicesButtonProps" />
-          <AppButton route-path="/about-us" :buttonProps="solutionButtonProps" />
+          <AppButton route-path="/services" :buttonProps="servicesButtonProps" />
+          <AppButton route-path="/solutions" :buttonProps="solutionButtonProps" />
         </div>
       </div>
     </div>
@@ -44,5 +44,7 @@ const solutionButtonProps = {
   background-size:cover;
   color: rgb(11, 25, 62);
   background-attachment: fixed;
+  transition: 0s linear;
+  transition-property: background-position;
 }
 </style>

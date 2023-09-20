@@ -46,7 +46,3 @@ const buttonProps = {
     btnHover: 'hover:tracking-wider hover:text-appSecondary',
 }
 </script>
-
-<style scoped>
-
-</style>

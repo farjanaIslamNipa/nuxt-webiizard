@@ -8,26 +8,26 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="text-center md:text-start">
-                            <NuxtLink to="#" class="text-sm block mb-2 md:mb-1 text-gray-300">Services</NuxtLink>
-                            <NuxtLink to="#" class="text-sm block text-gray-300">Solutions</NuxtLink>
+                            <NuxtLink to="/services" class="text-sm block mb-2 md:mb-1 text-gray-300">Services</NuxtLink>
+                            <NuxtLink to="/solutions" class="text-sm block text-gray-300">Solutions</NuxtLink>
                         </div>
                     </div>
                     <div class="flex justify-center border-0 md:border border-gray-500 md:border-y-0">
                         <div class="text-center md:text-start">
-                            <NuxtLink to="#" class="text-sm block mb-2 md:mb-1 text-gray-300">Projects</NuxtLink>
-                            <NuxtLink to="#" class="text-sm block text-gray-300">Blogs</NuxtLink>
+                            <NuxtLink to="/projects" class="text-sm block mb-2 md:mb-1 text-gray-300">Projects</NuxtLink>
+                            <NuxtLink to="/blogs" class="text-sm block text-gray-300">Blogs</NuxtLink>
                         </div>
                     </div>
                     <div class="flex justify-center border-0 md:border border-gray-500 md:border-y-0 md:border-l-0">
                         <div class="text-center md:text-start">
-                            <NuxtLink to="#" class="text-sm block mb-2 md:mb-1 text-gray-300">About us</NuxtLink>
-                            <NuxtLink to="#" class="text-sm block text-gray-300">Contact us</NuxtLink>
+                            <NuxtLink to="/about-us" class="text-sm block mb-2 md:mb-1 text-gray-300">About us</NuxtLink>
+                            <NuxtLink to="/contact-us" class="text-sm block text-gray-300">Contact us</NuxtLink>
                         </div>
                     </div>
                     <div class="flex justify-center">
                         <div class="text-center md:text-start">
-                            <NuxtLink to="#" class="text-sm block mb-2 md:mb-1 text-gray-300">Privacy Policy</NuxtLink>
-                            <NuxtLink to="#" class="text-sm block text-gray-300">Terms & Conditions</NuxtLink>
+                            <NuxtLink to="/privacy-policy" class="text-sm block mb-2 md:mb-1 text-gray-300">Privacy Policy</NuxtLink>
+                            <NuxtLink to="/terms-and-conditions" class="text-sm block text-gray-300">Terms & Conditions</NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -39,9 +39,9 @@
                 </div>
                 <div class="flex items-center justify-center gap-4 mt-1">
                     <!-- <span>Follow On:</span> -->
-                    <a href="#" target="_blank" class="font-semibold">Linkedin</a>
-                    <a href="#" target="_blank" class="font-semibold">Facebook</a>
-                    <a href="#" target="_blank" class="font-semibold">Instagram</a>
+                    <a href="#" target="_blank" class="font-semibold" area-label="Follow us on Linkedin" rel="noreferrer" name="Follow us on Linkedin">Linkedin</a>
+                    <a href="#" target="_blank" class="font-semibold" area-label="Follow us on Facebook" rel="noreferrer" name="Follow us on Facebook">Facebook</a>
+                    <a href="#" target="_blank" class="font-semibold" area-label="Follow us on Instagram" rel="noreferrer" name="Follow us on Instagram">Instagram</a>
                 </div>
                 
             </div>

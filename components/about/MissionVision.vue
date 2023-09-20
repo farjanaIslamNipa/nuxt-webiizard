@@ -22,10 +22,6 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
-
 <style scoped>
 .our-mission::before{
   position: absolute;

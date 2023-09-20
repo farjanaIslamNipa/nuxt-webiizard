@@ -125,7 +125,3 @@ const techData = ref([
   },
 ])
 </script>
-
-<style scoped>
-
-</style>

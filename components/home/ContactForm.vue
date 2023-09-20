@@ -62,8 +62,4 @@
   border-radius: 16px 0 0 0;
 
 }
-.contact-card{
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-}
-/* py-8 lg:py-12 px-4 lg:px-12 */
 </style>

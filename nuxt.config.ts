@@ -7,7 +7,18 @@ export default defineNuxtConfig({
         {charset: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {hid: 'description', name: 'description', content:'webiizard - web solution'},
-        {name: 'format-detection', content: 'telephone-no'}
+        {name: 'format-detection', content: 'telephone-no'},
+        {hid: 'fb:app_id', name: 'fb:app_id', content: '883712276121290'},
+        {hid: 'og:site_name', property: 'og:site_name', content: `${process.env.VUE_APP_NAME}`},
+        {hid: 'og:type', property: 'og:type', content: 'website'},
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Geekify - The fastest growing Micro-technology service provider in Australia, providing computer and technology services nationally.'
+        },
+        {
+          hid: 'keywords', name: 'keywords', content: 'Web design, web development, web solution, coding solution, image editing, image processing, e-commerce solution, best web design and development, web design and development solution'
+        },
       ],
       link: [
         {

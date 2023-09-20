@@ -39,11 +39,6 @@
     </div>
   </section>
 </template>
-
-<script setup>
-
-</script>
-
 <style scoped>
 .why-choose-title {
     width: 100%;

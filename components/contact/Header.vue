@@ -1,10 +1,9 @@
 
-import { NuxtImg } from '#build/components';
 <template>
   <div class="contact-header h-[600px]"></div>
   <div class="custom-container">
-    <div class="grid grid-cols-2">
-      <div class="bg-white px-12 py-16 mt-[-240px] contact-form">
+    <div class="grid grid-cols-2 gap-8">
+      <div class="bg-white px-12 py-16 mt-[-240px] contact-form relative overflow-hidden">
         <h3 class="text-3xl font-bold mb-3">Get in touch with us</h3>
         <p>We're here to help! Fill out the form below, and we'll respond promptly to assist you with any questions or inquiries you may have</p>
         <div class="mt-8 space-y-4">
@@ -48,11 +47,8 @@ import { NuxtImg } from '#build/components';
           <div><button class="py-3 text-white bg-brand w-full">Send Message</button></div>
         </div>
       </div>
-      <div class="flex justify-end items-end">
-        <div class="h-full w-full">
-          <h3 class="font-bold text-2xl px-10 pt-5 pb-3">Find us on google</h3>
-          <NuxtImg src="/images/contact-us/map.jpg" alt="Webizaard map" class="w-full px-10" />
-        </div>
+      <div class="w-full mt-8">
+        <AppWebiizard />
       </div>
     </div>
   </div>
@@ -64,11 +60,11 @@ import { NuxtImg } from '#build/components';
 
 <style scoped>
 .contact-header{
-  background:linear-gradient(0deg, rgb(11, 25, 62, 0.3), rgb(11, 25, 62, 0.1)), url('/images/contact-us/header.jpg');
+  background:linear-gradient(0deg, rgb(11, 25, 62, 0.3), rgb(11, 25, 62, 0.2)), url('/images/contact-us/banner.webp');
   background-repeat: no-repeat;
   background-size:cover;
   color: rgb(11, 25, 62);
-  background-position: center center;
+  background-position: bottom center;
 }
 
 .contact-form{
@@ -98,5 +94,15 @@ import { NuxtImg } from '#build/components';
 }
 label{
   font-size: 15px;
+}
+.contact-form::before{
+  position: absolute;
+    content: '';
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #01c1cf3d;
+    top: -120px;
+    left: -135px;
 }
 </style>

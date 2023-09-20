@@ -14,6 +14,7 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     color: var(--brandColor);
+    transition: background-image 0.5s ease-in-out;
 }
 .goog-logo-link {
     display:none !important;
