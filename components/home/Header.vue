@@ -38,31 +38,15 @@
 <script setup>
 const buttonProps = {
     btnName: 'Explore Services',
-    btnBg : 'bg-transparent',
-    btnColor: 'text-brand',
     btnBorder: 'border border-gray-400 rounded-sm',
     btnHeight: 'h-9 md:h-12',
     btnWidth: 'min-w-[170px] lg:min-w-[200px]',
-    btnFont: 'text-base',
     btnFw: 'font-semibold',
-    textTransform: 'capitalize',
     btnPadding: 'p-4',
     btnHover: 'hover:tracking-wider hover:text-appSecondary',
-    btnFocus: 'focus:none',
-    btnCustom: 'custom-button',
 }
 </script>
 
 <style scoped>
-@media(max-width:767px){
-  .header-img{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    color: #231557 0%;
-    color:#44107a 29%;
-    color: #ff1361 67%;
-    color: #fff800 100%
-  }
-}
+
 </style>

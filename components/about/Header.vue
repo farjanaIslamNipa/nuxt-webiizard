@@ -12,11 +12,11 @@ import { useSSRContext } from 'nuxt/dist/app/compat/capi';
             <div class="mt-6 lg:mt-10">
               <div class="flex gap-4 sm:gap-6 items-center">
                 <div class="flex gap-1 sm:gap-2 items-center">
-                  <img src="/images/about-us/services.svg" alt="Webiizard services" class="h-7 sm:h-10">
+                  <NuxtImg src="/images/about-us/services.svg" alt="Webiizard services" class="h-7 sm:h-10" />
                   <AppButton route-path="#" :buttonProps="serviceButtonProps" />
                 </div>
                 <div class="flex gap-1 sm:gap-[10px] items-center">
-                  <img src="/images/about-us/solution.svg" alt="Webiizard services" class="h-7 sm:h-10">
+                  <NuxtImg src="/images/about-us/solution.svg" alt="Webiizard services" class="h-7 sm:h-10" />
                   <AppButton route-path="#" :buttonProps="solutionButtonProps" />
                 </div>
               </div>

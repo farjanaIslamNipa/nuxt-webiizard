@@ -4,7 +4,7 @@
             <div class="border border-t-0 border-x-0 border-b-gray-500 pb-4">
                 <div class="grid grid-cols-1 md:grid-cols-5 space-y-3 md:space-y-0">
                     <div class="flex justify-center md:justify-start">
-                        <img src="/images/brand-logo.png" alt="Webiizard Logo" class="h-6 lg:h-8">
+                        <NuxtImg src="/images/brand-logo.png" alt="Webiizard Logo" class="h-6 lg:h-8" />
                     </div>
                     <div class="flex justify-center">
                         <div class="text-center md:text-start">

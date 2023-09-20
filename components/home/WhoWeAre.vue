@@ -1,5 +1,5 @@
 <template>
-  <section class="why-choose-bg mt-20 lg:mt-32">
+  <section class="why-choose-bg mt-14 md:mt-20 lg:mt-32">
     <div class="custom-container">
       <div class="pt-md-5 pt-sm-4 pt-0 xl:pb-8 lg:pb-3 pb-0">
         <div class="hidden lg:flex justify-end"><NuxtImg src="/images/home/choose-2.webp" alt="Why choose us" class="why-choose-img h-[600px]" /></div>
@@ -10,26 +10,26 @@
             <div class="grid grid-cols-2 gap-0 sm:gap-6 mt-5 md:mt-8">
               <div class="bg-white light-box-shadow h-full py-5 px-1 md:px-4">
                 <div class="flex items-center">
-                  <div><img src="/images/home/re-search.svg" alt="Resource research" class="h-10 md:h-12" /></div>
-                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Resource <br>Research</p>
+                  <div><NuxtImg src="/images/home/re-search.svg" alt="Resource research" class="h-10 md:h-12" /></div>
+                  <p class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Resource <br>Research</p>
                 </div>
               </div>
               <div class="bg-white light-box-shadow h-full py-4 px-1 md:px-4">
                 <div class="flex items-center">
-                  <div><img class="h-10 md:h-12" src="/images/home/24-seven.svg" alt="24/7 Support" /></div>
-                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">24/7 <br>Support</p>
+                  <div><NuxtImg class="h-10 md:h-12" src="/images/home/24-seven.svg" alt="24/7 Support" /></div>
+                  <p class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">24/7 <br>Support</p>
                 </div>
               </div>
               <div class="bg-white light-box-shadow h-full py-4 px-1 md:px-4">
                 <div class="flex items-center">
-                  <div><img class="h-10 md:h-12" src="/images/home/expert.svg" alt="Expert Professional" /></div>
-                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Expert  <br>Professional</p>
+                  <div><NuxtImg class="h-10 md:h-12" src="/images/home/expert.svg" alt="Expert Professional" /></div>
+                  <p class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Expert  <br>Professional</p>
                 </div>
               </div>
               <div class="bg-white light-box-shadow h-full py-4 px-1 md:px-4">
                 <div class="flex items-center">
-                  <div><img class="h-10 md:h-12" src="/images/home/re-work.svg" alt="Rework Assurance" /></div>
-                  <p style="color: #000000" class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Rework  <br>Assurance</p>
+                  <div><NuxtImg class="h-10 md:h-12" src="/images/home/re-work.svg" alt="Rework Assurance" /></div>
+                  <p class="mb-0 ml-2 md:ml-3 font-bold text-sm md:text-base">Rework  <br>Assurance</p>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@
 .light-box-shadow{
   box-shadow: rgba(78, 78, 78, 0.09) 0 3px 12px 0;
 }
-@media(max-width:768px){
+@media(max-width:1023px){
   .why-choose-title:after {
     width: 60px;
     top: 55%;

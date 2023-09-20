@@ -1,5 +1,3 @@
-
-import { NuxtImg } from '#build/components';
 <template>
   <div class="custom-container mt-14 sm:mt-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">

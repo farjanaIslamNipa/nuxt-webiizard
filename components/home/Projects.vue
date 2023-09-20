@@ -1,10 +1,10 @@
 <template>
-  <div class="custom-container mt-10">
+  <div class="custom-container mt-12">
     <h1 class="text-center mb-6">A Glimpse into Our Projects</h1>
     <p class="text-center px-0 xl:px-32">Our gallery of stunning websites and web applications that showcase our passion for design, creativity, and technological expertise. Each project is a testament to our commitment to transforming ideas into captivating online experiences. Discover the artistry and innovation behind our web solutions</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-14 mt-16">
       <div v-for="project in projectData" :key="project.id" class="relative min-h-[400px] project-card cursor-pointer">
-        <img :src="project.img" :alt="project.name" class="h-full w-full object-cover" >
+        <NuxtImg :src="project.img" :alt="project.name" class="h-full w-full object-cover" />
         <div class="project-hover-content bg-appSecondary bg-opacity-80 h-16 absolute bottom-5 w-[90%] left-[50%] translate-x-[-50%]">
           <div class="flex justify-between h-full items-center">
             <p class="text-white font-bold text-xl pl-2">{{ project.name }}</p>
@@ -70,18 +70,11 @@ const projectData =ref([
 
 const buttonProps = {
     btnName: 'Explore More',
-    btnBg : 'bg-transparent',
-    btnColor: 'text-brand',
-    btnBorder: 'border border-gray-400 rounded-sm',
+    btnBorder: 'border border-gray-300 rounded-sm',
     btnHeight: 'h-9 md:h-12',
     btnWidth: 'min-w-[170px]',
-    btnFont: 'text-base',
     btnFw: 'font-semibold',
-    textTransform: 'capitalize',
-    btnPadding: 'p-4',
-    btnHover: 'hover:tracking-wider hover:text-appSecondary',
-    btnFocus: 'focus:none',
-    btnCustom: 'custom-button',
+    btnHover: 'hover:tracking-wider hover:text-appSecondary'
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-    <div class="mt-24 mb-20">
+    <div class="mt-24 mb-14 md:mb-20">
       <div class="text-center">
-        <h1 class="">Technology we used</h1>
+        <h1>Technology we used</h1>
         <p class="text-xl font-semibold mt-1">To give you better experience</p>
       </div>
       <div class="bg-gray-50 mt-16 py-14 md:py-20">
@@ -9,12 +9,12 @@
           <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:gap-12">
             <div class="grid grid-cols-2 gap-3 lg:gap-4 xl:gap-6">
               <div v-for="tech in techData" :key="tech.id" class="flex items-center gap-3 border border-gray-200 rounded-full py-2 px-4 bg-white">
-                <div><NuxtImg :src="tech.imgRgb" :alt="tech.name" :class="tech.imgHeight" /></div>
+                <div><NuxtImg :src="tech.imgRgb" :alt="tech.name" :class="tech.imgHeight"  loading="lazy" /></div>
                 <div>{{ tech.name }}</div>
               </div>
             </div>
             <div class="hidden md:flex justify-end">
-              <NuxtImg src="/images/home/tech-1.webp" alt="Webiizard solutions" class="technology-img" />
+              <NuxtImg src="/images/home/tech-1.webp" alt="Webiizard solutions" class="technology-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -127,8 +127,5 @@ const techData = ref([
 </script>
 
 <style scoped>
-/* .technology-img{
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-} */
+
 </style>

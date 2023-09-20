@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-container mt-20">
+  <div class="custom-container mt-10 md:mt-20">
     <div class="flex justify-between items-end">
       <h3 class="text-2xl font-bold">Blog Bytes</h3>
       <AppButton route-path="#" :buttonProps="buttonProps" />

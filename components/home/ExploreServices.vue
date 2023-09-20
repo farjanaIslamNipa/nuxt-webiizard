@@ -2,12 +2,12 @@
   <div class="custom-container mt-14 md:mt-20">
     <h1 class="text-center capitalize mb-4">Explore our offerings</h1>
     <p class="text-center text-lg leading-[25px]">we offer three several kind services for your personal and professional use. <br> Choose your desirable service and step ahead to your goal</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 xl:gap-6 2xl:gap-8 mt-14 px-0 sm:px-20 md:px-0 xl:px-20">
-      <div v-for="service in serviceDetails" :key="service.id" class="bg-white rounded-3xl card-shadow-lg p-2 cursor-pointer service-card">
+    <div class="grid grid-cols-12 gap-4 xl:gap-6 2xl:gap-8 mt-14 px-0 sm:px-20 md:px-0 xl:px-20 place-content-center">
+      <div v-for="(service, index) in serviceDetails" :key="service.id" class="bg-white rounded-3xl card-shadow-lg p-2 cursor-pointer service-card lg:col-span-4" :class="index === 2 ? 'col-span-full md:col-span-full' : 'col-span-full md:col-span-6'">
         <div class="bg-[#F7F9FD] p-5 relative rounded-3xl h-full">
           <div class="top-block text-center font-bold"><p class="opacity-0 highlight text-[#0b193ee5]">{{ service.serviceBtn }}</p></div>
           <div class="text-center mt-10">
-            <img :src="service.img" :alt="service.name" class="mx-auto h-24">
+            <NuxtImg :src="service.img" :alt="service.name" class="mx-auto h-24" />
             <h3 class="text-[22px] font-bold mt-5">{{ service.name }}</h3>
             <div v-if="service.features" class="space-y-2 lg:space-y-3 mt-5 pb-4 lg:pb-8">
               <P v-for="(feature, index) in service.features" :key="index">{{ feature }}</P>

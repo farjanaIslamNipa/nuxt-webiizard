@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="props?.routePath ? props?.routePath : '#'" class="flex items-center justify-center gap-2 transition-all ease-in-out duration-500" 
-  :class="props.buttonProps ? defaultBtnStyle() : 'bg-[#f04935] text-white border border-[#f04935] rounded-md h-9 md:h-10 min-w-[80px] md:min-w-[120px] text-base md:text-lg font-medium hover:bg-white hover:text-[#f04935] hover:border hover:border-[#f04935] focus:none'">
+  :class="props.buttonProps ? defaultBtnStyle() : 'bg-white text-brand border border-gray-400 rounded-md h-9 md:h-10 min-w-[80px] md:min-w-[120px] text-base md:text-lg font-medium focus:none'">
   <div v-if="props.buttonProps?.icon && props.buttonProps?.iconPosition !== 'right'">
     <img 
     :src="props.buttonProps?.iconSrc" 
@@ -30,16 +30,16 @@ const btnStyle = ref(props.buttonProps)
 // Button Classes
 const defaultBtnStyle = () => {
 let btnClasses = {}
-btnStyle.value.btnBg ? btnClasses.btnBg = btnStyle.value.btnBg : btnClasses.btnBg = 'bg-[#f04935]',
-btnStyle.value.btnColor ? btnClasses.btnColor = btnStyle.value.btnColor : btnClasses.btnColor = 'text-white',
-btnStyle.value.btnBorder ? btnClasses.btnBorder = btnStyle.value.btnBorder : btnClasses.btnBorder ='border border-[#f04935]',
+btnStyle.value.btnBg ? btnClasses.btnBg = btnStyle.value.btnBg : btnClasses.btnBg = 'bg-white',
+btnStyle.value.btnColor ? btnClasses.btnColor = btnStyle.value.btnColor : btnClasses.btnColor = 'text-black',
+btnStyle.value.btnBorder ? btnClasses.btnBorder = btnStyle.value.btnBorder : btnClasses.btnBorder ='border border-gray-400',
 btnStyle.value.btnHeight ? btnClasses.btnHeight = btnStyle.value.btnHeight : btnClasses.btnHeight = 'h-9 md:h-10',
 btnStyle.value.btnWidth ? btnClasses.btnWidth = btnStyle.value.btnWidth : btnClasses.btnWidth = 'min-w-[80px] md:min-w-[120px]',
 btnStyle.value.btnFont ? btnClasses.btnFont = btnStyle.value.btnFont : btnClasses.btnFont = 'text-sm md:text-base',
 btnStyle.value.btnFw ? btnClasses.btnFw = btnStyle.value.btnFw : btnClasses.btnFw = 'font-medium',
 btnStyle.value.textTransform ? btnClasses.textTransform = btnStyle.value.textTransform : btnClasses.textTransform = '',
-btnStyle.value.btnPadding ? btnClasses.btnPadding = btnStyle.value.btnPadding : btnClasses.btnPadding = 'py-1 md:py-[6px] px-4 md:px-6',
-btnStyle.value.btnHover ? btnClasses.btnHover = btnStyle.value.btnHover : btnClasses.btnHover = 'hover:bg-white hover:text-[#f04935] hover:border hover:border-[#f04935]',
+btnStyle.value.btnPadding ? btnClasses.btnPadding = btnStyle.value.btnPadding : btnClasses.btnPadding = '',
+btnStyle.value.btnHover ? btnClasses.btnHover = btnStyle.value.btnHover : btnClasses.btnHover = '',
 btnStyle.value.btnFocus ? btnClasses.btnFocus = btnStyle.value.btnFocus : btnClasses.btnFocus = 'focus:none',
 btnStyle.value.customBtn ? btnClasses.customBtn = btnStyle.value.customBtn : btnClasses.customBtn = ''
 
