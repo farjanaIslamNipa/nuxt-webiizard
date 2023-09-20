@@ -1,4 +1,3 @@
-
 <template>
   <div class="about-us-header py-4 sm:py-10 lg:py-16">
     <div class="custom-container">
@@ -10,10 +9,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 .about-us-header{

@@ -18,7 +18,11 @@
       </div>
     </div>
   </div>
-  <HomeBlogs />
+  <div class="custom-container mt-16">
+    <h2 class="mb-4 text-3xl font-bold">Find us on google</h2>
+    <img class="w-full" src="/images/contact-us/map.jpg" alt="">
+  </div>
+  <!-- <HomeBlogs /> -->
 </template>
 
 <script setup>

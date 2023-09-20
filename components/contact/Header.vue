@@ -1,4 +1,3 @@
-
 <template>
   <div class="contact-header h-[600px]"></div>
   <div class="custom-container">
@@ -53,10 +52,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 .contact-header{

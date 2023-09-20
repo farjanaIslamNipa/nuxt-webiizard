@@ -19,6 +19,14 @@ export default defineNuxtConfig({
         {
           hid: 'keywords', name: 'keywords', content: 'Web design, web development, web solution, coding solution, image editing, image processing, e-commerce solution, best web design and development, web design and development solution'
         },
+        {
+          name:"msapplication-TileColor",
+          content:"#da532c"
+        },
+        {
+          name:"theme-color",
+          content:"#ffffff"
+        }
       ],
       link: [
         {
@@ -26,9 +34,30 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700;800&family=Nunito+Sans:wght@200;300;400;600;700&display=swap'
         },
         {
+          rel: 'apple-touch-icon',
+          sizes: "180x180",
+          href: '/apple-touch-icon.png'
+        },
+        {
           rel: 'icon',
-          type: 'image/x-icon',
-          href: '/favicon.icon'
+          sizes: "32x32",
+          type: 'image/png',
+          href: '/favicon-32x32.png'
+        },
+        {
+          rel: 'icon',
+          sizes: "16x16",
+          type: 'image/png',
+          href: '/favicon-16x16.png'
+        },
+        {
+          rel: 'manifest',
+          href: '/site.webmanifest'
+        },
+        {
+          rel: 'mask-icon',
+          color: '#5bbad5',
+          href: '/safari-pinned-tab.svg'
         },
         {
 
