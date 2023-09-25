@@ -1,10 +1,10 @@
 <template>
-  <div class="custom-container mt-10 md:mt-20">
+  <div class="custom-container my-10 md:my-20">
     <div class="flex justify-between items-end">
       <h3 class="text-2xl font-bold">Blog Bytes</h3>
       <AppButton route-path="#" :buttonProps="buttonProps" />
     </div>
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-10">
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 2xl:gap-10">
       <div v-for="blog in blogData" :key="blog.id" class="bg-white blog-card">
         <div class="bg-white h-60 w-full mb-6 overflow-hidden">
           <NuxtImg :src="blog.img" alt="Webiizard Blog" class="h-full w-full object-cover blog-img" />
@@ -14,7 +14,7 @@
           <div class="flex items-center w-1/2 mb-1">
             <div class="round"></div> <div class="line w-full"></div>
           </div>
-            <NuxtLink to="#" class="font-semibold text-sm text-appSecondary w-1/2 ml-auto hover:text-brand transition-all delay-200">View Blog</NuxtLink>
+            <NuxtLink to="/blogs" class="font-semibold text-sm text-appSecondary w-1/2 ml-auto hover:text-brand transition-all delay-200">View Blog</NuxtLink>
         </div>
       </div>
     </div>

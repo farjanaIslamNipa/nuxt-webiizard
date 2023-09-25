@@ -1,8 +1,8 @@
 <template>
   <div class="custom-container">
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 lg:gap-10 mt-4 md:mt-10 lg:mt-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 lg:gap-10 mt-4 md:mt-10 lg:mt-12 xl:mt-14">
       <div class="">
-        <NuxtImg src="/images/home/header.webp" alt="Webiizard" :placeholder="[800, 500, 75, 5]" />
+        <NuxtImg src="/images/home/header.webp" alt="Webiizard" :placeholder="[850, 550, 75, 5]" />
       </div>
       <div class="pl-0 md:pl-4 xl:pl-10 2xl:pl-20 text-brand">
         <h1>Elevate your online</h1>
@@ -28,7 +28,7 @@
           </p>
         </div>
         <div class="inline-block">
-          <AppButton route-path="#" :buttonProps="buttonProps" />
+          <AppButton route-path="/services" :buttonProps="buttonProps" />
         </div>
       </div>
     </div>

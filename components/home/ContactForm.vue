@@ -37,7 +37,7 @@
           </div>
           <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
             <NuxtImg src="/images/home/email.svg" alt="Webiizard email" class="h-8 lg:h-10" />
-            <a href="emailTo:webiizard@gmail.com">webiizard@gmail.com</a>
+            <a href="mailto:webiizard08@gmail.com">webiizard08@gmail.com</a>
           </div>
           <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
             <NuxtImg src="/images/home/phone.svg" alt="Webiizard phone" class="h-8 lg:h-10" />
