@@ -9,7 +9,7 @@
         </div>
         <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
           <NuxtImg src="/images/home/email.svg" alt="Webiizard email" class="h-8 lg:h-10" />
-          <a href="emailTo:webiizard@gmail.com">webiizard@gmail.com</a>
+          <a href="mailto:webiizar08d@gmail.com">webiizard08@gmail.com</a>
         </div>
         <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
           <NuxtImg src="/images/home/phone.svg" alt="Webiizard phone" class="h-8 lg:h-10" />
@@ -18,7 +18,7 @@
       </div>
     </div>
   </div>
-  <div class="custom-container mt-16">
+  <div class="custom-container mt-16 mb-10 md:mb-20">
     <h2 class="mb-4 text-3xl font-bold">Find us on google</h2>
     <img class="w-full" src="/images/contact-us/map.jpg" alt="">
   </div>

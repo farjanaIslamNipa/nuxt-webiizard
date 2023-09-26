@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="hidden md:flex justify-end">
-              <NuxtImg src="/images/home/tech-1.webp" alt="Webiizard solutions" class="technology-img" loading="lazy" />
+              <NuxtImg src="/images/home/tech-1.webp" alt="Webiizard solutions" class="technology-img" :placeholder="[560, 500, 75, 5]" />
             </div>
           </div>
         </div>

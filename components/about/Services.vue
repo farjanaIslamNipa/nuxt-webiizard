@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-container mt-14 sm:mt-20">
+  <div class="custom-container mt-14 sm:mt-20 mb-10 md:mb-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
       <div class="order-2 lg:order-1">
         <h3 class="text-2xl font-bold mb-4">Our Services</h3>
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="order-1 lg:order-2">
-        <NuxtImg src="/images/about-us/about-service.jpg" />
+        <NuxtImg src="/images/about-us/about-service.webp" />
       </div>
     </div>
   </div>

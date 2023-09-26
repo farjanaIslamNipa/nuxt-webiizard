@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-10 md:mt-20 py-10 md:py-20 px-5 bg-brand text-gray-300 text-sm">
+    <div class="py-10 md:py-20 px-5 bg-brand text-gray-300 text-sm">
         <div class="custom-container">
             <div class="border border-t-0 border-x-0 border-b-gray-500 pb-4">
                 <div class="grid grid-cols-1 md:grid-cols-5 space-y-3 md:space-y-0">
