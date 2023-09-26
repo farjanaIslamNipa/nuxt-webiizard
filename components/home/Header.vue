@@ -1,4 +1,4 @@
-<template>
+<template>  
   <div class="custom-container">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 lg:gap-10 mt-4 md:mt-10 lg:mt-14">
       <div class="">
