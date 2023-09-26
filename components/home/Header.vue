@@ -2,10 +2,12 @@
   <div class="custom-container">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 lg:gap-10 mt-4 md:mt-10 lg:mt-12 xl:mt-14">
       <div class="">
-        <NuxtImg src="/images/home/header.webp" alt="Webiizard" :placeholder="[850, 550, 75, 5]" />
+        <NuxtImg src="/images/home/header.webp" alt="Webiizard" :placeholder="[835, 555, 75, 5]" />
       </div>
       <div class="pl-0 md:pl-4 xl:pl-10 2xl:pl-20 text-brand">
-        <h1>Elevate your online</h1>
+        <Appear>
+          <h1>Elevate your online</h1>
+        </Appear>
         <h1>presence to new heights</h1>
         <div class="pl-1 my-4 lg:my-6">
           <p class="flex gap-2 items-center">
@@ -30,6 +32,7 @@
         <div class="inline-block">
           <AppButton route-path="/services" :buttonProps="buttonProps" />
         </div>
+        <Appear />
       </div>
     </div>
   </div>

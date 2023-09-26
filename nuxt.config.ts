@@ -69,8 +69,7 @@ export default defineNuxtConfig({
           type: 'text/javascript'
         }
       ],
-    }
-    
+    } 
   },
   css: [
     '~/assets/css/main.css',
