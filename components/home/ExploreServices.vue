@@ -3,7 +3,7 @@
     <h1 class="text-center capitalize mb-4">Explore our offerings</h1>
     <p class="text-center text-lg leading-[25px]">we offer three several kind services for your personal and professional use. <br> Choose your desirable service and step ahead to your goal</p>
     <div class="grid grid-cols-12 gap-4 xl:gap-6 2xl:gap-8 mt-14 px-0 sm:px-20 md:px-0 xl:px-20 place-content-center">
-      <div v-for="(service, index) in serviceDetails" :key="service.id" class="bg-white rounded-3xl card-shadow-lg p-2 cursor-pointer service-card lg:col-span-4" :class="index === 2 ? 'col-span-full md:col-span-full' : 'col-span-full md:col-span-6'">
+      <div v-for="(service, index) in serviceDetails" :key="service.id" class="bg-white rounded-3xl card-shadow-lg p-2 cursor-pointer service-card lg:col-span-4" :class="index === 2 ? 'col-span-full md:col-span-full' : 'col-span-full md:col-span-6'" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
         <div class="bg-[#F7F9FD] p-5 relative rounded-3xl h-full">
           <div class="top-block text-center font-bold"><p class="opacity-0 highlight text-[#0b193ee5]">{{ service.serviceBtn }}</p></div>
           <div class="text-center mt-10">

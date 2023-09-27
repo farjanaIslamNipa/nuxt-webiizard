@@ -3,15 +3,15 @@
   <div class="custom-container mt-14">
     <div class="info-wrapper overflow-hidden relative py-10 px-10">
       <div class="block space-y-4 md:space-y-0 md:flex justify-between items-center">
-        <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
+        <div class="flex items-center gap-2 md:gap-1 lg:gap-2" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">
           <NuxtImg src="/images/home/map.svg" alt="Webiizard Location" class="h-8 lg:h-10" />
           <p>Road-9, South Banasree, Dhaka</p>
         </div>
-        <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
+        <div class="flex items-center gap-2 md:gap-1 lg:gap-2" data-aos="fade-right" data-aos-delay="400" data-aos-duration="900">
           <NuxtImg src="/images/home/email.svg" alt="Webiizard email" class="h-8 lg:h-10" />
           <a href="mailto:webiizar08d@gmail.com">webiizard08@gmail.com</a>
         </div>
-        <div class="flex items-center gap-2 md:gap-1 lg:gap-2">
+        <div class="flex items-center gap-2 md:gap-1 lg:gap-2" data-aos="fade-right" data-aos-delay="300" data-aos-duration="600">
           <NuxtImg src="/images/home/phone.svg" alt="Webiizard phone" class="h-8 lg:h-10" />
           <a href="tel:01700557663">01700557663</a>
         </div>
@@ -26,7 +26,11 @@
 </template>
 
 <script setup>
-
+definePageMeta({
+  pageTransition: {
+    name: 'rotate'
+  }
+})
 </script>
 
 <style scoped>

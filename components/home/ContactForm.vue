@@ -5,7 +5,7 @@
       <div class="mt-8 md:mt-14 bg-white mx-0 sm:mx-10 md:mx-0 xl:mx-20 2xl:mx-36 rounded-2xl pl-8 lg:pl-10 2xl:pl-20 pr-8 lg:pr-16 2xl:pr-24 py-12">
         <div class="grid grid-cols-12 gap-0 md:gap-8">
           <div class="col-span-5 hidden lg:block">
-            <NuxtImg src="/images/home/phone-3.webp" alt="Contact us" class="p-0 xl:p-4" /> 
+            <NuxtImg src="/images/home/phone-3.webp" alt="Contact us" class="p-0 xl:p-4" data-aos="flip-left" data-aos-delay="700" data-aos-duration="800" /> 
           </div>
           <div class="col-span-12 lg:col-span-7 pt-0 md:pt-2 xl:pt-8">
             <div class="">

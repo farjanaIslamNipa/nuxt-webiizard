@@ -8,7 +8,7 @@
         <div class="custom-container">
           <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:gap-12">
             <div class="grid grid-cols-2 gap-3 lg:gap-4 xl:gap-6">
-              <div v-for="tech in techData" :key="tech.id" class="flex items-center gap-3 border border-gray-200 rounded-full py-2 px-4 bg-white">
+              <div v-for="tech in techData" :key="tech.id" class="flex items-center gap-3 border border-gray-200 rounded-full py-2 px-4 bg-white" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="800">
                 <div><NuxtImg :src="tech.imgRgb" :alt="tech.name" :class="tech.imgHeight"  loading="lazy" /></div>
                 <div>{{ tech.name }}</div>
               </div>

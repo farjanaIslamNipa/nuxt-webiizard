@@ -5,7 +5,7 @@
         <h3 class="text-2xl font-bold mb-4">Our Services</h3>
         <p>Our design team crafts visually stunning websites that captivate your audience and reflect your brand's personality. Our developers bring your vision to life with robust, user-friendly websites that function seamlessly.</p>
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-3 lg:gap-4 xl:gap-6 mt-8">
-          <div v-for="tech in techData" :key="tech.id" class="flex items-center gap-3 rounded-full py-3 px-4 bg-white service-card">
+          <div v-for="tech in techData" :key="tech.id" class="flex items-center gap-3 rounded-full py-3 px-4 bg-white service-card" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="800">
             <div class="text-appPrimary font-bold bg-brand h-7 w-7 text-lg rounded-full flex justify-center items-center">w</div>
             <p class="font-semibold">{{ tech.name }}</p>
           </div>

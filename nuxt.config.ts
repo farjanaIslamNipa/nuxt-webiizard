@@ -69,9 +69,9 @@ export default defineNuxtConfig({
           type: 'text/javascript'
         }
       ],
-    } 
+    },
   },
-  css: [
+css: [
     '~/assets/css/main.css',
 ],
 postcss: {
@@ -86,5 +86,9 @@ modules: [
 image: {
   quality: 80,
   format: ['webp']
-}
+},
+plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
+devServer: {
+  host: "0.0.0.0"
+},
 })
