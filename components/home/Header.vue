@@ -30,7 +30,6 @@
         <div class="inline-block">
           <AppButton route-path="/services" :buttonProps="buttonProps" />
         </div>
-        <Appear />
       </div>
     </div>
   </div>

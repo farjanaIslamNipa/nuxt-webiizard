@@ -26,7 +26,9 @@
                 <label for="">Message</label>
                 <textarea name="" id="" cols="30" rows="3" class="block border w-full mt-1 py-2 px-4 placeholder:text-sm border-gray-400" placeholder="Enter your email address"></textarea>
               </div>
-              <button class="brand-outline-button text-appSecondary">Send Message</button>
+              <div class="inline-block">
+                <AppButton :buttonProps="buttonProps" />
+              </div>
             </div>
           </div>
         </div>
@@ -50,7 +52,15 @@
 </template>
 
 <script setup>
-
+const buttonProps = {
+    btnName: 'Send Message',
+    btnBorder: 'border border-gray-400 rounded-sm',
+    btnHeight: 'h-9 md:h-12',
+    btnWidth: 'min-w-[170px] lg:min-w-[200px]',
+    btnFw: 'font-semibold',
+    btnPadding: 'p-4',
+    btnHover: 'hover:tracking-wider hover:text-appSecondary',
+}
 </script>
 
 <style scoped>
